@@ -1,0 +1,21 @@
+name: tensorboard_mnist
+description: An example Tensorboard for MNIST trained data (requires access to the full Anaconda repository and the internet).
+
+commands:
+  default:
+    unix: bash run.sh
+    supports_http_options: true
+
+downloads:
+  MNIST: https://storage.googleapis.com/anaconda-public-data/projects-data/tensorboard/mnist_tutorial.zip
+
+channels: []
+packages: []
+
+env_specs:
+  anaconda44_py27:
+    channels: []
+    packages:
+      - python=2.7
+      - tensorflow=1.1.0
+      - ipykernel=4.6
